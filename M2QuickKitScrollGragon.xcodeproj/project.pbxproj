@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0EC1E11B7E434D00C470E5 /* TableSimpleCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0EC1DF1B7E434D00C470E5 /* TableSimpleCellViewController.m */; };
+		1A0EC1E21B7E434D00C470E5 /* TableSimpleCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0EC1E01B7E434D00C470E5 /* TableSimpleCellViewController.xib */; };
 		1AE670E51B4965D700D98BDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE670E41B4965D700D98BDA /* main.m */; };
 		1AE670E81B4965D700D98BDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE670E71B4965D700D98BDA /* AppDelegate.m */; };
 		1AE670EB1B4965D700D98BDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE670EA1B4965D700D98BDA /* ViewController.m */; };
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0EC1DE1B7E434D00C470E5 /* TableSimpleCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSimpleCellViewController.h; sourceTree = "<group>"; };
+		1A0EC1DF1B7E434D00C470E5 /* TableSimpleCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableSimpleCellViewController.m; sourceTree = "<group>"; };
+		1A0EC1E01B7E434D00C470E5 /* TableSimpleCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableSimpleCellViewController.xib; sourceTree = "<group>"; };
 		1AE670DF1B4965D700D98BDA /* M2QuickKitScrollGragon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M2QuickKitScrollGragon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE670E31B4965D700D98BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AE670E41B4965D700D98BDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +65,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A0EC1D51B7E346900C470E5 /* LocalDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocalDataHelper;
+			sourceTree = "<group>";
+		};
+		1A0EC1D61B7E346900C470E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A0EC1D71B7E346900C470E5 /* RemoteDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RemoteDataHelper;
+			sourceTree = "<group>";
+		};
+		1A0EC1D81B7E346900C470E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A0EC1D91B7E346900C470E5 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A0EC1D91B7E346900C470E5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		1A0EC1DA1B7E346900C470E5 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		1A0EC1DB1B7E346900C470E5 /* UILogic */ = {
+			isa = PBXGroup;
+			children = (
+				1A0EC1DD1B7E425F00C470E5 /* TableSimpleCell */,
+			);
+			path = UILogic;
+			sourceTree = "<group>";
+		};
+		1A0EC1DC1B7E346900C470E5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1A0EC1DD1B7E425F00C470E5 /* TableSimpleCell */ = {
+			isa = PBXGroup;
+			children = (
+				1A0EC1DE1B7E434D00C470E5 /* TableSimpleCellViewController.h */,
+				1A0EC1DF1B7E434D00C470E5 /* TableSimpleCellViewController.m */,
+				1A0EC1E01B7E434D00C470E5 /* TableSimpleCellViewController.xib */,
+			);
+			path = TableSimpleCell;
+			sourceTree = "<group>";
+		};
 		1AE670D61B4965D700D98BDA = {
 			isa = PBXGroup;
 			children = (
@@ -86,8 +159,15 @@
 				1AE670E91B4965D700D98BDA /* ViewController.h */,
 				1AE670EA1B4965D700D98BDA /* ViewController.m */,
 				1AE670EC1B4965D700D98BDA /* Main.storyboard */,
-				1AE670EF1B4965D700D98BDA /* Images.xcassets */,
 				1AE670F11B4965D700D98BDA /* LaunchScreen.xib */,
+				1A0EC1DB1B7E346900C470E5 /* UILogic */,
+				1A0EC1DA1B7E346900C470E5 /* UICommon */,
+				1A0EC1D61B7E346900C470E5 /* Model */,
+				1A0EC1D71B7E346900C470E5 /* RemoteDataHelper */,
+				1A0EC1D51B7E346900C470E5 /* LocalDataHelper */,
+				1A0EC1DC1B7E346900C470E5 /* Utils */,
+				1AE670EF1B4965D700D98BDA /* Images.xcassets */,
+				1A0EC1D81B7E346900C470E5 /* Resources */,
 				1AE670E21B4965D700D98BDA /* Supporting Files */,
 			);
 			path = M2QuickKitScrollGragon;
@@ -201,6 +281,7 @@
 			files = (
 				1AE670EE1B4965D700D98BDA /* Main.storyboard in Resources */,
 				1AE670F31B4965D700D98BDA /* LaunchScreen.xib in Resources */,
+				1A0EC1E21B7E434D00C470E5 /* TableSimpleCellViewController.xib in Resources */,
 				1AE670F01B4965D700D98BDA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +302,7 @@
 			files = (
 				1AE670EB1B4965D700D98BDA /* ViewController.m in Sources */,
 				1AE670E81B4965D700D98BDA /* AppDelegate.m in Sources */,
+				1A0EC1E11B7E434D00C470E5 /* TableSimpleCellViewController.m in Sources */,
 				1AE670E51B4965D700D98BDA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -414,6 +496,7 @@
 				1AE671041B4965D700D98BDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AE671051B4965D700D98BDA /* Build configuration list for PBXNativeTarget "M2QuickKitScrollGragonTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +505,7 @@
 				1AE671071B4965D700D98BDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

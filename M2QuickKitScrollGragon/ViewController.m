@@ -8,8 +8,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+static NSString * const kCellIdentifier = @"kCellIdentifier";
 
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic) NSArray *datas;
 @end
 
 @implementation ViewController
@@ -17,11 +20,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    self.datas = @[@[@"TableSimpleCell", @"SimpleCellViewController"],
+                   ];
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UITableViewDataSource, UITableViewDelegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.datas count];
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
+    NSArray *data = self.datas[indexPath.row];
+    cell.textLabel.text = data[0];
+    
+    return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSArray *data = self.datas[indexPath.row];
+    UIViewController *controller = [NSClassFromString(data[1]) new];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end
