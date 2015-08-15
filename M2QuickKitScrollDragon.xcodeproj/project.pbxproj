@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0692C378FE2A1F0FC730FD7F /* libPods-M2QuickKitScrollDragon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE84B7F7793338B5D9F19E0D /* libPods-M2QuickKitScrollDragon.a */; };
+		1A0EC1FE1B7E4A2100C470E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0EC1E81B7E4A2100C470E5 /* AppDelegate.m */; };
+		1A0EC1FF1B7E4A2100C470E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0EC1E91B7E4A2100C470E5 /* LaunchScreen.xib */; };
+		1A0EC2001B7E4A2100C470E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0EC1EB1B7E4A2100C470E5 /* Main.storyboard */; };
+		1A0EC2011B7E4A2100C470E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0EC1ED1B7E4A2100C470E5 /* Images.xcassets */; };
+		1A0EC2031B7E4A2100C470E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0EC1F01B7E4A2100C470E5 /* main.m */; };
+		1A0EC2041B7E4A2100C470E5 /* TableSimpleCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0EC1F91B7E4A2100C470E5 /* TableSimpleCellViewController.m */; };
+		1A0EC2051B7E4A2100C470E5 /* TableSimpleCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0EC1FA1B7E4A2100C470E5 /* TableSimpleCellViewController.xib */; };
+		1A0EC2061B7E4A2100C470E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0EC1FD1B7E4A2100C470E5 /* ViewController.m */; };
+		1A0EC20B1B7E4A3D00C470E5 /* M2QuickKitScrollDragonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0EC2091B7E4A3D00C470E5 /* M2QuickKitScrollDragonTests.m */; };
+		1A6442771B7F97AA00564401 /* M7DebugLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6442761B7F97AA00564401 /* M7DebugLogFormatter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AE670F91B4965D700D98BDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AE670D71B4965D700D98BDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AE670DE1B4965D700D98BDA;
+			remoteInfo = M2QuickKitScrollDragon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A0EC1E71B7E4A2100C470E5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A0EC1E81B7E4A2100C470E5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1A0EC1EA1B7E4A2100C470E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1A0EC1EC1B7E4A2100C470E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A0EC1ED1B7E4A2100C470E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A0EC1EE1B7E4A2100C470E5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0EC1F01B7E4A2100C470E5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A0EC1F81B7E4A2100C470E5 /* TableSimpleCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSimpleCellViewController.h; sourceTree = "<group>"; };
+		1A0EC1F91B7E4A2100C470E5 /* TableSimpleCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableSimpleCellViewController.m; sourceTree = "<group>"; };
+		1A0EC1FA1B7E4A2100C470E5 /* TableSimpleCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableSimpleCellViewController.xib; sourceTree = "<group>"; };
+		1A0EC1FC1B7E4A2100C470E5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1A0EC1FD1B7E4A2100C470E5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1A0EC2081B7E4A3D00C470E5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0EC2091B7E4A3D00C470E5 /* M2QuickKitScrollDragonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2QuickKitScrollDragonTests.m; sourceTree = "<group>"; };
+		1A6442731B7F940300564401 /* M2QuickKitScrollDragon.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2QuickKitScrollDragon.pch; sourceTree = "<group>"; };
+		1A6442751B7F97AA00564401 /* M7DebugLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M7DebugLogFormatter.h; sourceTree = "<group>"; };
+		1A6442761B7F97AA00564401 /* M7DebugLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M7DebugLogFormatter.m; sourceTree = "<group>"; };
+		1AE670DF1B4965D700D98BDA /* M2QuickKitScrollDragon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M2QuickKitScrollDragon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE670F81B4965D700D98BDA /* M2QuickKitScrollDragonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M2QuickKitScrollDragonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D72120DA3BFB6434AFBA3B /* Pods-M2QuickKitScrollDragon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M2QuickKitScrollDragon.release.xcconfig"; path = "Pods/Target Support Files/Pods-M2QuickKitScrollDragon/Pods-M2QuickKitScrollDragon.release.xcconfig"; sourceTree = "<group>"; };
+		DF0CC95F0DF86CA48B881F7E /* Pods-M2QuickKitScrollDragon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M2QuickKitScrollDragon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-M2QuickKitScrollDragon/Pods-M2QuickKitScrollDragon.debug.xcconfig"; sourceTree = "<group>"; };
+		EE84B7F7793338B5D9F19E0D /* libPods-M2QuickKitScrollDragon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-M2QuickKitScrollDragon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AE670DC1B4965D700D98BDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0692C378FE2A1F0FC730FD7F /* libPods-M2QuickKitScrollDragon.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE670F51B4965D700D98BDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		167485E43B1A8D31CD71351F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF0CC95F0DF86CA48B881F7E /* Pods-M2QuickKitScrollDragon.debug.xcconfig */,
+				36D72120DA3BFB6434AFBA3B /* Pods-M2QuickKitScrollDragon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1A0EC1E61B7E4A2100C470E5 /* M2QuickKitScrollDragon */ = {
+			isa = PBXGroup;
+			children = (
+				1A0EC1E71B7E4A2100C470E5 /* AppDelegate.h */,
+				1A0EC1E81B7E4A2100C470E5 /* AppDelegate.m */,
+				1A0EC1FC1B7E4A2100C470E5 /* ViewController.h */,
+				1A0EC1FD1B7E4A2100C470E5 /* ViewController.m */,
+				1A0EC1E91B7E4A2100C470E5 /* LaunchScreen.xib */,
+				1A0EC1EB1B7E4A2100C470E5 /* Main.storyboard */,
+				1A0EC1F61B7E4A2100C470E5 /* UILogic */,
+				1A0EC1F51B7E4A2100C470E5 /* UICommon */,
+				1A0EC1F11B7E4A2100C470E5 /* Model */,
+				1A0EC1F21B7E4A2100C470E5 /* RemoteDataHelper */,
+				1A0EC1EF1B7E4A2100C470E5 /* LocalDataHelper */,
+				1A0EC1FB1B7E4A2100C470E5 /* Utils */,
+				1A0EC1ED1B7E4A2100C470E5 /* Images.xcassets */,
+				1A0EC1F31B7E4A2100C470E5 /* Resources */,
+				1A0EC20C1B7E4B1C00C470E5 /* Supporting Files */,
+			);
+			path = M2QuickKitScrollDragon;
+			sourceTree = "<group>";
+		};
+		1A0EC1EF1B7E4A2100C470E5 /* LocalDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocalDataHelper;
+			sourceTree = "<group>";
+		};
+		1A0EC1F11B7E4A2100C470E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A0EC1F21B7E4A2100C470E5 /* RemoteDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RemoteDataHelper;
+			sourceTree = "<group>";
+		};
+		1A0EC1F31B7E4A2100C470E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A0EC1F41B7E4A2100C470E5 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A0EC1F41B7E4A2100C470E5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		1A0EC1F51B7E4A2100C470E5 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		1A0EC1F61B7E4A2100C470E5 /* UILogic */ = {
+			isa = PBXGroup;
+			children = (
+				1A0EC1F71B7E4A2100C470E5 /* TableSimpleCell */,
+			);
+			path = UILogic;
+			sourceTree = "<group>";
+		};
+		1A0EC1F71B7E4A2100C470E5 /* TableSimpleCell */ = {
+			isa = PBXGroup;
+			children = (
+				1A0EC1F81B7E4A2100C470E5 /* TableSimpleCellViewController.h */,
+				1A0EC1F91B7E4A2100C470E5 /* TableSimpleCellViewController.m */,
+				1A0EC1FA1B7E4A2100C470E5 /* TableSimpleCellViewController.xib */,
+			);
+			path = TableSimpleCell;
+			sourceTree = "<group>";
+		};
+		1A0EC1FB1B7E4A2100C470E5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1A6442741B7F97AA00564401 /* Log */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1A0EC2071B7E4A3D00C470E5 /* M2QuickKitScrollDragonTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A0EC2081B7E4A3D00C470E5 /* Info.plist */,
+				1A0EC2091B7E4A3D00C470E5 /* M2QuickKitScrollDragonTests.m */,
+			);
+			path = M2QuickKitScrollDragonTests;
+			sourceTree = "<group>";
+		};
+		1A0EC20C1B7E4B1C00C470E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A0EC1EE1B7E4A2100C470E5 /* Info.plist */,
+				1A0EC1F01B7E4A2100C470E5 /* main.m */,
+				1A6442731B7F940300564401 /* M2QuickKitScrollDragon.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A6442741B7F97AA00564401 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				1A6442751B7F97AA00564401 /* M7DebugLogFormatter.h */,
+				1A6442761B7F97AA00564401 /* M7DebugLogFormatter.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		1AE670D61B4965D700D98BDA = {
+			isa = PBXGroup;
+			children = (
+				1A0EC1E61B7E4A2100C470E5 /* M2QuickKitScrollDragon */,
+				1A0EC2071B7E4A3D00C470E5 /* M2QuickKitScrollDragonTests */,
+				1AE670E01B4965D700D98BDA /* Products */,
+				167485E43B1A8D31CD71351F /* Pods */,
+				63F9DD8A0FD292521C232F87 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1AE670E01B4965D700D98BDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AE670DF1B4965D700D98BDA /* M2QuickKitScrollDragon.app */,
+				1AE670F81B4965D700D98BDA /* M2QuickKitScrollDragonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63F9DD8A0FD292521C232F87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE84B7F7793338B5D9F19E0D /* libPods-M2QuickKitScrollDragon.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AE670DE1B4965D700D98BDA /* M2QuickKitScrollDragon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AE671021B4965D700D98BDA /* Build configuration list for PBXNativeTarget "M2QuickKitScrollDragon" */;
+			buildPhases = (
+				A63AE246AB44855BC2538BD8 /* Check Pods Manifest.lock */,
+				1AE670DB1B4965D700D98BDA /* Sources */,
+				1AE670DC1B4965D700D98BDA /* Frameworks */,
+				1AE670DD1B4965D700D98BDA /* Resources */,
+				6E5FA97BF690498BE01F0B83 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = M2QuickKitScrollDragon;
+			productName = M2QuickKitScrollDragon;
+			productReference = 1AE670DF1B4965D700D98BDA /* M2QuickKitScrollDragon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AE670F71B4965D700D98BDA /* M2QuickKitScrollDragonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AE671051B4965D700D98BDA /* Build configuration list for PBXNativeTarget "M2QuickKitScrollDragonTests" */;
+			buildPhases = (
+				1AE670F41B4965D700D98BDA /* Sources */,
+				1AE670F51B4965D700D98BDA /* Frameworks */,
+				1AE670F61B4965D700D98BDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AE670FA1B4965D700D98BDA /* PBXTargetDependency */,
+			);
+			name = M2QuickKitScrollDragonTests;
+			productName = M2QuickKitScrollDragonTests;
+			productReference = 1AE670F81B4965D700D98BDA /* M2QuickKitScrollDragonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AE670D71B4965D700D98BDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = chenms.m2;
+				TargetAttributes = {
+					1AE670DE1B4965D700D98BDA = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					1AE670F71B4965D700D98BDA = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 1AE670DE1B4965D700D98BDA;
+					};
+				};
+			};
+			buildConfigurationList = 1AE670DA1B4965D700D98BDA /* Build configuration list for PBXProject "M2QuickKitScrollDragon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AE670D61B4965D700D98BDA;
+			productRefGroup = 1AE670E01B4965D700D98BDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AE670DE1B4965D700D98BDA /* M2QuickKitScrollDragon */,
+				1AE670F71B4965D700D98BDA /* M2QuickKitScrollDragonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AE670DD1B4965D700D98BDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0EC2011B7E4A2100C470E5 /* Images.xcassets in Resources */,
+				1A0EC2051B7E4A2100C470E5 /* TableSimpleCellViewController.xib in Resources */,
+				1A0EC1FF1B7E4A2100C470E5 /* LaunchScreen.xib in Resources */,
+				1A0EC2001B7E4A2100C470E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE670F61B4965D700D98BDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E5FA97BF690498BE01F0B83 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-M2QuickKitScrollDragon/Pods-M2QuickKitScrollDragon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A63AE246AB44855BC2538BD8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AE670DB1B4965D700D98BDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A6442771B7F97AA00564401 /* M7DebugLogFormatter.m in Sources */,
+				1A0EC2031B7E4A2100C470E5 /* main.m in Sources */,
+				1A0EC1FE1B7E4A2100C470E5 /* AppDelegate.m in Sources */,
+				1A0EC2061B7E4A2100C470E5 /* ViewController.m in Sources */,
+				1A0EC2041B7E4A2100C470E5 /* TableSimpleCellViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE670F41B4965D700D98BDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0EC20B1B7E4A3D00C470E5 /* M2QuickKitScrollDragonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AE670FA1B4965D700D98BDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AE670DE1B4965D700D98BDA /* M2QuickKitScrollDragon */;
+			targetProxy = 1AE670F91B4965D700D98BDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A0EC1E91B7E4A2100C470E5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A0EC1EA1B7E4A2100C470E5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		1A0EC1EB1B7E4A2100C470E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A0EC1EC1B7E4A2100C470E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AE671001B4965D700D98BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AE671011B4965D700D98BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AE671031B4965D700D98BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF0CC95F0DF86CA48B881F7E /* Pods-M2QuickKitScrollDragon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = M2QuickKitScrollDragon/M2QuickKitScrollDragon.pch;
+				INFOPLIST_FILE = M2QuickKitScrollDragon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = M2QuickKitScrollDragon;
+			};
+			name = Debug;
+		};
+		1AE671041B4965D700D98BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36D72120DA3BFB6434AFBA3B /* Pods-M2QuickKitScrollDragon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = M2QuickKitScrollDragon/M2QuickKitScrollDragon.pch;
+				INFOPLIST_FILE = M2QuickKitScrollDragon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = M2QuickKitScrollDragon;
+			};
+			name = Release;
+		};
+		1AE671061B4965D700D98BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = M2QuickKitScrollDragonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = M2QuickKitScrollDragonTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/M2QuickKitScrollDragon.app/M2QuickKitScrollDragon";
+			};
+			name = Debug;
+		};
+		1AE671071B4965D700D98BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = M2QuickKitScrollDragonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = M2QuickKitScrollDragonTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/M2QuickKitScrollDragon.app/M2QuickKitScrollDragon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AE670DA1B4965D700D98BDA /* Build configuration list for PBXProject "M2QuickKitScrollDragon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE671001B4965D700D98BDA /* Debug */,
+				1AE671011B4965D700D98BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AE671021B4965D700D98BDA /* Build configuration list for PBXNativeTarget "M2QuickKitScrollDragon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE671031B4965D700D98BDA /* Debug */,
+				1AE671041B4965D700D98BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AE671051B4965D700D98BDA /* Build configuration list for PBXNativeTarget "M2QuickKitScrollDragonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE671061B4965D700D98BDA /* Debug */,
+				1AE671071B4965D700D98BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AE670D71B4965D700D98BDA /* Project object */;
+}

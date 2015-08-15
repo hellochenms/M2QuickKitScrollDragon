@@ -1,0 +1,19 @@
+//
+//  M2QuickKitScrollDragon.pch
+//  M2QuickKitScrollDragon
+//
+//  Created by thatsoul on 15/8/15.
+//  Copyright (c) 2015年 chenms.m2. All rights reserved.
+//
+
+#ifndef M2QuickKitScrollDragon_M2QuickKitScrollDragon_pch
+#define M2QuickKitScrollDragon_M2QuickKitScrollDragon_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#endif
+
+#endif
