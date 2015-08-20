@@ -19,8 +19,6 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];

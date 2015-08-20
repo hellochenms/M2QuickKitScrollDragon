@@ -17,6 +17,8 @@
 		1A0EC2051B7E4A2100C470E5 /* TableSimpleCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0EC1FA1B7E4A2100C470E5 /* TableSimpleCellViewController.xib */; };
 		1A0EC2061B7E4A2100C470E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0EC1FD1B7E4A2100C470E5 /* ViewController.m */; };
 		1A0EC20B1B7E4A3D00C470E5 /* M2QuickKitScrollDragonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0EC2091B7E4A3D00C470E5 /* M2QuickKitScrollDragonTests.m */; };
+		1A36C0501B8585B5001B7A58 /* GroupSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A36C04E1B8585B5001B7A58 /* GroupSectionViewController.m */; };
+		1A36C0511B8585B5001B7A58 /* GroupSectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A36C04F1B8585B5001B7A58 /* GroupSectionViewController.xib */; };
 		1A6442771B7F97AA00564401 /* M7DebugLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6442761B7F97AA00564401 /* M7DebugLogFormatter.m */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,9 @@
 		1A0EC1FD1B7E4A2100C470E5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1A0EC2081B7E4A3D00C470E5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A0EC2091B7E4A3D00C470E5 /* M2QuickKitScrollDragonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2QuickKitScrollDragonTests.m; sourceTree = "<group>"; };
+		1A36C04D1B8585B5001B7A58 /* GroupSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSectionViewController.h; sourceTree = "<group>"; };
+		1A36C04E1B8585B5001B7A58 /* GroupSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSectionViewController.m; sourceTree = "<group>"; };
+		1A36C04F1B8585B5001B7A58 /* GroupSectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupSectionViewController.xib; sourceTree = "<group>"; };
 		1A6442731B7F940300564401 /* M2QuickKitScrollDragon.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2QuickKitScrollDragon.pch; sourceTree = "<group>"; };
 		1A6442751B7F97AA00564401 /* M7DebugLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M7DebugLogFormatter.h; sourceTree = "<group>"; };
 		1A6442761B7F97AA00564401 /* M7DebugLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M7DebugLogFormatter.m; sourceTree = "<group>"; };
@@ -88,9 +93,9 @@
 			children = (
 				1A0EC1E71B7E4A2100C470E5 /* AppDelegate.h */,
 				1A0EC1E81B7E4A2100C470E5 /* AppDelegate.m */,
+				1A0EC1E91B7E4A2100C470E5 /* LaunchScreen.xib */,
 				1A0EC1FC1B7E4A2100C470E5 /* ViewController.h */,
 				1A0EC1FD1B7E4A2100C470E5 /* ViewController.m */,
-				1A0EC1E91B7E4A2100C470E5 /* LaunchScreen.xib */,
 				1A0EC1EB1B7E4A2100C470E5 /* Main.storyboard */,
 				1A0EC1F61B7E4A2100C470E5 /* UILogic */,
 				1A0EC1F51B7E4A2100C470E5 /* UICommon */,
@@ -152,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				1A0EC1F71B7E4A2100C470E5 /* TableSimpleCell */,
+				1A36C0471B85856E001B7A58 /* SectionStyle */,
 			);
 			path = UILogic;
 			sourceTree = "<group>";
@@ -191,6 +197,16 @@
 				1A6442731B7F940300564401 /* M2QuickKitScrollDragon.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A36C0471B85856E001B7A58 /* SectionStyle */ = {
+			isa = PBXGroup;
+			children = (
+				1A36C04D1B8585B5001B7A58 /* GroupSectionViewController.h */,
+				1A36C04E1B8585B5001B7A58 /* GroupSectionViewController.m */,
+				1A36C04F1B8585B5001B7A58 /* GroupSectionViewController.xib */,
+			);
+			path = SectionStyle;
 			sourceTree = "<group>";
 		};
 		1A6442741B7F97AA00564401 /* Log */ = {
@@ -312,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A36C0511B8585B5001B7A58 /* GroupSectionViewController.xib in Resources */,
 				1A0EC2011B7E4A2100C470E5 /* Images.xcassets in Resources */,
 				1A0EC2051B7E4A2100C470E5 /* TableSimpleCellViewController.xib in Resources */,
 				1A0EC1FF1B7E4A2100C470E5 /* LaunchScreen.xib in Resources */,
@@ -370,6 +387,7 @@
 				1A0EC2031B7E4A2100C470E5 /* main.m in Sources */,
 				1A0EC1FE1B7E4A2100C470E5 /* AppDelegate.m in Sources */,
 				1A0EC2061B7E4A2100C470E5 /* ViewController.m in Sources */,
+				1A36C0501B8585B5001B7A58 /* GroupSectionViewController.m in Sources */,
 				1A0EC2041B7E4A2100C470E5 /* TableSimpleCellViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

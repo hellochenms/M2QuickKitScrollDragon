@@ -5,9 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableSimpleCellViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupSectionViewController">
             <connections>
-                <outlet property="tableView" destination="T7Z-Ph-XjO" id="PL0-SB-Ifb"/>
+                <outlet property="tableView" destination="WAY-AG-miZ" id="iUh-5R-QGY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,17 +16,17 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="T7Z-Ph-XjO">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="WAY-AG-miZ">
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="T7Z-Ph-XjO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3iO-PJ-mNf"/>
-                <constraint firstAttribute="trailing" secondItem="T7Z-Ph-XjO" secondAttribute="trailing" id="CsB-1c-lST"/>
-                <constraint firstAttribute="bottom" secondItem="T7Z-Ph-XjO" secondAttribute="bottom" id="Hwi-af-Tsd"/>
-                <constraint firstItem="T7Z-Ph-XjO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QNt-Ct-XJ9"/>
+                <constraint firstAttribute="bottom" secondItem="WAY-AG-miZ" secondAttribute="bottom" id="0GY-46-sua"/>
+                <constraint firstItem="WAY-AG-miZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="1pM-xa-dzV"/>
+                <constraint firstAttribute="trailing" secondItem="WAY-AG-miZ" secondAttribute="trailing" id="IcW-ln-Se1"/>
+                <constraint firstItem="WAY-AG-miZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gpS-cM-yLU"/>
             </constraints>
         </view>
     </objects>

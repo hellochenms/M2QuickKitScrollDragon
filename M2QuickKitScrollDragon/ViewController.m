@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "TableSimpleCellViewController.h"
+#import "GroupSectionViewController.h"
 
 static NSString * const kCellIdentifier = @"kCellIdentifier";
 
@@ -22,7 +24,8 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
     // Do any additional setup after loading the view, typically from a nib.
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    self.datas = @[@[@"TableSimpleCell", @"TableSimpleCellViewController"],
+    self.datas = @[@[@"TableSimpleCell", [TableSimpleCellViewController class]],
+                   @[@"GroupSectionStyle", [GroupSectionViewController class]],
                    ];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
@@ -43,7 +46,7 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSArray *data = self.datas[indexPath.row];
-    UIViewController *controller = [NSClassFromString(data[1]) new];
+    UIViewController *controller = [data[1] new];
     [self.navigationController pushViewController:controller animated:YES];
 }
 
