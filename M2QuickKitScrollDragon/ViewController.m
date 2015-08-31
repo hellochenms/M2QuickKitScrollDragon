@@ -18,7 +18,6 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
 @end
 
 @implementation ViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -37,6 +36,7 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.datas count];
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
     NSArray *data = self.datas[indexPath.row];
@@ -44,6 +44,7 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
     
     return cell;
 }
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSArray *data = self.datas[indexPath.row];
     UIViewController *controller = [data[1] new];

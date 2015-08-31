@@ -22,11 +22,10 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
     // Do any additional setup after loading the view from its nib.
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    //
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    self.tableView.backgroundColor = [UIColor cyanColor];
-    self.tableView.tableFooterView = nil;
+//    self.tableView.backgroundColor = [UIColor cyanColor];
+//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
 }
 
@@ -34,6 +33,7 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 3;
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;
 }
@@ -41,6 +41,7 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 40;
 }
+
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return 0.0001;
 }
@@ -54,9 +55,10 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *view = [UIView new];
-    
+    view.backgroundColor = [UIColor whiteColor];
+
     UILabel *label = [UILabel new];
-    label.backgroundColor = [UIColor orangeColor];
+//    label.backgroundColor = [UIColor orangeColor];
     [view addSubview:label];
     [label mas_makeConstraints:^(MASConstraintMaker *make) {
         UIView *superView = [label superview];
