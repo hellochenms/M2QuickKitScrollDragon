@@ -5,4 +5,5 @@ target 'M2QuickKitScrollDragon' do
 pod 'CocoaLumberjack'
 pod 'Masonry'
 pod 'MBProgressHUD'
+pod 'UITableView+FDTemplateLayoutCell'
 end
