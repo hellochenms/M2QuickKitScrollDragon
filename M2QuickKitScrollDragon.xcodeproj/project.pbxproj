@@ -24,6 +24,8 @@
 		1A78DC9F1B944E32009FE75C /* AdjustCellHeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A78DC9D1B944E32009FE75C /* AdjustCellHeightViewController.xib */; };
 		1A78DCA31B9450F2009FE75C /* AdjustHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A78DCA11B9450F2009FE75C /* AdjustHeightCell.m */; };
 		1A78DCA41B9450F2009FE75C /* AdjustHeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A78DCA21B9450F2009FE75C /* AdjustHeightCell.xib */; };
+		1AA422DA1B9C1BE100B87EC2 /* NoSeparatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA422D81B9C1BE100B87EC2 /* NoSeparatorViewController.m */; };
+		1AA422DB1B9C1BE100B87EC2 /* NoSeparatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA422D91B9C1BE100B87EC2 /* NoSeparatorViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,9 @@
 		1A78DCA01B9450F2009FE75C /* AdjustHeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustHeightCell.h; sourceTree = "<group>"; };
 		1A78DCA11B9450F2009FE75C /* AdjustHeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustHeightCell.m; sourceTree = "<group>"; };
 		1A78DCA21B9450F2009FE75C /* AdjustHeightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdjustHeightCell.xib; sourceTree = "<group>"; };
+		1AA422D71B9C1BE100B87EC2 /* NoSeparatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoSeparatorViewController.h; sourceTree = "<group>"; };
+		1AA422D81B9C1BE100B87EC2 /* NoSeparatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoSeparatorViewController.m; sourceTree = "<group>"; };
+		1AA422D91B9C1BE100B87EC2 /* NoSeparatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoSeparatorViewController.xib; sourceTree = "<group>"; };
 		1AE670DF1B4965D700D98BDA /* M2QuickKitScrollDragon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M2QuickKitScrollDragon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE670F81B4965D700D98BDA /* M2QuickKitScrollDragonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M2QuickKitScrollDragonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D72120DA3BFB6434AFBA3B /* Pods-M2QuickKitScrollDragon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M2QuickKitScrollDragon.release.xcconfig"; path = "Pods/Target Support Files/Pods-M2QuickKitScrollDragon/Pods-M2QuickKitScrollDragon.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,9 +171,10 @@
 		1A0EC1F61B7E4A2100C470E5 /* UILogic */ = {
 			isa = PBXGroup;
 			children = (
+				1A0EC1F71B7E4A2100C470E5 /* TableSimpleCell */,
 				1A78DC9A1B944E05009FE75C /* AdjustCellHeight */,
 				1A36C0471B85856E001B7A58 /* SectionStyle */,
-				1A0EC1F71B7E4A2100C470E5 /* TableSimpleCell */,
+				1AA422D61B9C1BC800B87EC2 /* NoSeparator */,
 			);
 			path = UILogic;
 			sourceTree = "<group>";
@@ -240,6 +246,16 @@
 				1A78DCA21B9450F2009FE75C /* AdjustHeightCell.xib */,
 			);
 			path = AdjustCellHeight;
+			sourceTree = "<group>";
+		};
+		1AA422D61B9C1BC800B87EC2 /* NoSeparator */ = {
+			isa = PBXGroup;
+			children = (
+				1AA422D71B9C1BE100B87EC2 /* NoSeparatorViewController.h */,
+				1AA422D81B9C1BE100B87EC2 /* NoSeparatorViewController.m */,
+				1AA422D91B9C1BE100B87EC2 /* NoSeparatorViewController.xib */,
+			);
+			path = NoSeparator;
 			sourceTree = "<group>";
 		};
 		1AE670D61B4965D700D98BDA = {
@@ -355,6 +371,7 @@
 				1A78DC9F1B944E32009FE75C /* AdjustCellHeightViewController.xib in Resources */,
 				1A36C0511B8585B5001B7A58 /* GroupSectionViewController.xib in Resources */,
 				1A0EC2011B7E4A2100C470E5 /* Images.xcassets in Resources */,
+				1AA422DB1B9C1BE100B87EC2 /* NoSeparatorViewController.xib in Resources */,
 				1A78DCA41B9450F2009FE75C /* AdjustHeightCell.xib in Resources */,
 				1A0EC2051B7E4A2100C470E5 /* TableSimpleCellViewController.xib in Resources */,
 				1A0EC1FF1B7E4A2100C470E5 /* LaunchScreen.xib in Resources */,
@@ -415,6 +432,7 @@
 				1A0EC1FE1B7E4A2100C470E5 /* AppDelegate.m in Sources */,
 				1A78DC9E1B944E32009FE75C /* AdjustCellHeightViewController.m in Sources */,
 				1A0EC2061B7E4A2100C470E5 /* ViewController.m in Sources */,
+				1AA422DA1B9C1BE100B87EC2 /* NoSeparatorViewController.m in Sources */,
 				1A36C0501B8585B5001B7A58 /* GroupSectionViewController.m in Sources */,
 				1A0EC2041B7E4A2100C470E5 /* TableSimpleCellViewController.m in Sources */,
 			);

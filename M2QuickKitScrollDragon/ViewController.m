@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "TableSimpleCellViewController.h"
 #import "AdjustCellHeightViewController.h"
 #import "GroupSectionViewController.h"
-#import "TableSimpleCellViewController.h"
+#import "NoSeparatorViewController.h"
 
 static NSString * const kCellIdentifier = @"kCellIdentifier";
 
@@ -24,9 +25,11 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
     // Do any additional setup after loading the view, typically from a nib.
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    self.datas = @[@[@"AdjustCellHeight", [AdjustCellHeightViewController class]],
-                   @[@"GroupSectionStyle", [GroupSectionViewController class]],
+    self.datas = @[
                    @[@"TableSimpleCell", [TableSimpleCellViewController class]],
+                   @[@"AdjustCellHeight", [AdjustCellHeightViewController class]],
+                   @[@"GroupSectionStyle", [GroupSectionViewController class]],
+                   @[@"NoSeparator", [NoSeparatorViewController class]],
                    ];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
