@@ -7,10 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "TableSimpleCellViewController.h"
 #import "AdjustCellHeightViewController.h"
 #import "GroupSectionViewController.h"
 #import "NoSeparatorViewController.h"
+#import "StaticCellMasterViewController.h"
 
 static NSString * const kCellIdentifier = @"kCellIdentifier";
 
@@ -26,8 +26,8 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.datas = @[
-                   @[@"TableSimpleCell", [TableSimpleCellViewController class]],
                    @[@"AdjustCellHeight", [AdjustCellHeightViewController class]],
+                   @[@"StaticCell", @"StaticCellMaster", [StaticCellMasterViewController class]],
                    @[@"GroupSectionStyle", [GroupSectionViewController class]],
                    @[@"NoSeparator", [NoSeparatorViewController class]],
                    ];
@@ -52,8 +52,14 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSArray *data = self.datas[indexPath.row];
-    UIViewController *controller = [data[1] new];
-    [self.navigationController pushViewController:controller animated:YES];
+    if ([data count] == 2) {
+        UIViewController *controller = [data[1] new];
+        [self.navigationController pushViewController:controller animated:YES];
+    } else {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:data[1] bundle:[NSBundle mainBundle]];
+        UIViewController *controller = [storyboard instantiateInitialViewController];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
 }
 
 @end
